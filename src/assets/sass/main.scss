@@ -1,0 +1,61 @@
+@import "compass/css3";
+@import "compass";
+
+@include font-face("Diavlo", font-files("../src/assets/fonts/diavlo_book_ii_37-webfont.woff"));
+@include font-face("Diavlo-Bold", font-files("../src/assets/fonts/diavlo_bold_ii_37-webfont.woff"));
+
+@mixin bold-face() {
+    font-family: "Diavlo-Bold", sans-serif;
+    font-weight: normal;
+}
+
+$default-dark: #272B30;
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Diavlo", sans-serif;
+}
+
+.navbar-logo {
+    padding: 5px;
+}
+
+
+$nodepanelColor: #0b97c4;
+$nodepanelPadding: 5px;
+.nodepanel {
+    @include border-radius(5px);
+    width: 150px;
+    min-height: 100px;
+    background-color: $nodepanelColor;
+    display: inline-block;
+    position: absolute;
+    padding: $nodepanelPadding;
+    border: 1px solid darken($nodepanelColor, 20%);
+    margin: 10px;
+    color: white;
+    h1 {
+        margin-top: -$nodepanelPadding;
+        margin-left: -$nodepanelPadding;
+        margin-right: -$nodepanelPadding;
+        margin-bottom: $nodepanelPadding;
+        background-color: darken($nodepanelColor, 20%);
+        font-size: 140%;
+        padding: $nodepanelPadding;
+        //@include bold-face();
+        border-bottom: 1px solid darken($nodepanelColor, 30%);
+        text-shadow: none;
+    }
+    hr {
+        border-color: #dddddd;
+        margin-top: $nodepanelPadding;
+        margin-bottom: $nodepanelPadding;
+        margin-left: -$nodepanelPadding / 2;
+        margin-right: -$nodepanelPadding / 2;
+    }
+}
+
+#diagramContainer {
+    background-color: lighten($default-dark, 10%);
+    position: relative;
+}
+

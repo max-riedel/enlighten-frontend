@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="plumbJS" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/bower_components/jsPlumb/dist/js/jsPlumb-2.0.7.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/bower_components/jsPlumb/dist/js/jsPlumb-2.0.7.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

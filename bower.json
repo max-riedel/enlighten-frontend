@@ -1,0 +1,15 @@
+{
+  "name": "reactlearing",
+  "version": "0.0.1",
+  "authors": [
+    "Mitch Chen <mitchblog@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "Cookies": "",
+    "moment": "",
+    "es6-shim": "",
+    "bootswatch-dist": "slate",
+    "jsPlumb": "~2.0.7"
+  }
+}
